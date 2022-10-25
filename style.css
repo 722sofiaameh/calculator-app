@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(222, 26%, 31%);
+  font-family: "League Spartan", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  color: white;
+}
+section {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  width: 30%;
+  overflow: hidden;
+}
+.display {
+  width: 100%;
+  background-color: hsl(224, 36%, 15%);
+  margin-bottom: 5%;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: end;
+  color: white;
+  font-size: 28px;
+}
+.input {
+  background-color: hsl(224, 36%, 15%);
+
+  justify-content: center;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+  align-content: center;
+  border-radius: 8px;
+}
+.gridItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  padding: 1.6rem;
+  font-size: 18px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  width: 60px;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.Del{
+    width: 80px;
+}
+.equalSign {
+  background-color: hsl(6, 63%, 50%);
+}
+.Reset {
+  background-color: hsl(225, 21%, 49%);
+}
+.Items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.Reset{
+    width:180px;
+}
+.equalSign{
+    width: 180px;
+}
+@keyframes big {
+  0% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .calculator {
+    display: block;
+    width: 350px;
+  }
+  .Reset {
+    width:120px;
+  }
+  .equalSign{
+    width: 120px;
+  }
+  .Del{
+    width: 60px;
+  }
+  
+}

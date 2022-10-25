@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <section>
+      <div class="calculator">
+        <div class="header">
+          <p>Calc</p>
+          <div class="toggle" style="font-size: 12px;">THEME</div>
+        </div>
+        <div class="display">
+          <div class="output"></div>
+          <div class="result">0</div>
+      </div>
+        <div class="input">
+          <div class="gridItems">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="Del" style="background-color: hsl(225, 21%, 49%); text-align:center;"><p style="text-align:center;">DEL</p></button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button>/</button>
+            <button>*</button>
+           
+          </div>
+          <div class="Items" style="display: grid; grid-template-columns:repeat(2,180px); margin:auto; justify-content:center; align-items: center; gap: 10px; padding: 10px;">
+            <button class="Reset"  >RESET</button>
+            <button class="equalSign" >=</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="main.js"></script>
+  </body>
+</html>
