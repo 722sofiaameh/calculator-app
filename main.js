@@ -9,6 +9,7 @@ keys.forEach(keys => {
 });
 
 
+// create a function calculate..
 function calculate(){
     let buttonText = this.innerText;
     if (buttonText === "RESET"){
@@ -18,7 +19,7 @@ function calculate(){
         output.style.animation = "";
         return;
     }
-    if (buttonText === "DEL"){
+    if(buttonText === "DEL"){
         output.textContent = output.textContent.substr(0,output.textContent.length-1);
         return;
     }

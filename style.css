@@ -48,41 +48,48 @@ section {
 .gridItems {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 10px;
+  padding: 10px;
+  /* width: 300px; */
+  height: 300px;
 }
 button {
-  padding: 1.6rem;
+  /* padding: 1.6rem; */
   font-size: 18px;
   border: none;
   transition: all 0.3s ease-in-out;
   background-color: white;
-  width: 60px;
+  /* width: 60px; */
   cursor: pointer;
-  margin: auto;
-  text-align: center;
+  /* margin: auto; */
+  /* text-align: center; */
   box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Del{
-    width: 80px;
+.DEL{
+  background-color: hsl(225, 21%, 49%);
+  
 }
 .equalSign {
   background-color: hsl(6, 63%, 50%);
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 .Reset {
   background-color: hsl(225, 21%, 49%);
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
-.Items {
+/* .Items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-}
-.Reset{
-    width:180px;
-}
-.equalSign{
-    width: 180px;
-}
+} */
+
 @keyframes big {
   0% {
     font-size: 18px;
@@ -94,17 +101,8 @@ button {
 @media (max-width: 500px) {
   .calculator {
     display: block;
-    width: 350px;
-    height: 80vh;
+    width: 300px;
+    /* height: 80vh; */
   }
-  .Reset {
-    width:120px;
-  }
-  .equalSign{
-    width: 120px;
-  }
-  .Del{
-    width: 60px;
-  }
-  
+
 }
