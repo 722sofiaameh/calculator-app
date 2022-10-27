@@ -38,12 +38,11 @@ section {
 }
 .input {
   background-color: hsl(224, 36%, 15%);
-
   justify-content: center;
   padding-top: 10px;
-  /* padding-bottom: 10px; */
   align-content: center;
   border-radius: 8px;
+  /* color: red; */
 }
 .gridItems {
   display: grid;
@@ -51,28 +50,22 @@ section {
   grid-template-rows: repeat(5, 1fr);
   gap: 10px;
   padding: 10px;
-  /* width: 300px; */
   height: 300px;
 }
 button {
-  /* padding: 1.6rem; */
   font-size: 18px;
   border: none;
   transition: all 0.3s ease-in-out;
   background-color: white;
-  /* width: 60px; */
   cursor: pointer;
-  /* margin: auto; */
-  /* text-align: center; */
   box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.DEL{
+.DEL {
   background-color: hsl(225, 21%, 49%);
-  
 }
 .equalSign {
   background-color: hsl(6, 63%, 50%);
@@ -84,12 +77,26 @@ button {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-/* .Items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-} */
-
+input {
+  height: 15px;
+  width: 18px;
+  appearance: none;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+}
+input:hover {
+  cursor: pointer;
+}
+.tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+#one {
+  opacity: 1;
+}
 @keyframes big {
   0% {
     font-size: 18px;
@@ -102,7 +109,5 @@ button {
   .calculator {
     display: block;
     width: 300px;
-    /* height: 80vh; */
   }
-
 }

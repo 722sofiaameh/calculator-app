@@ -25,12 +25,28 @@
       <div class="calculator">
         <div class="header">
           <p>Calc</p>
-          <div class="toggle" style="font-size: 12px;">THEME</div>
+          <div
+            class="head_section"
+            style="
+              display: flex;
+              gap: 10px;
+              justify-content: center;
+              align-items: center;
+              font-size: 12px;
+            "
+          >
+            <div>THEME</div>
+            <div class="tri-state-toggle">
+              <input type="radio" class="btn" name="toggle" id="one" />
+              <input type="radio" class="btn" name="toggle" id="two" />
+              <input type="radio" class="btn" name="toggle" id="three" />
+            </div>
+          </div>
         </div>
         <div class="display">
           <div class="output"></div>
           <div class="result">0</div>
-      </div>
+        </div>
         <div class="input">
           <div class="gridItems">
             <button>7</button>
@@ -50,11 +66,10 @@
             <button>/</button>
             <button>*</button>
             <!-- <div class="Items" style="display: grid; grid-template-columns:repeat(2,180px); margin:auto; justify-content:center; align-items: center; gap: 10px; padding: 10px;"> -->
-              <button class="Reset"  >RESET</button>
-              <button class="equalSign" >=</button>
+            <button class="Reset">RESET</button>
+            <button class="equalSign">=</button>
             <!-- </div> -->
           </div>
-         
         </div>
       </div>
     </section>
